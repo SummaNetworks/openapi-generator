@@ -88,10 +88,15 @@ public class AdditionalPropertiesArray extends HashMap<String, List> {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class AdditionalPropertiesArray {\n");
+   /* sb.append("class AdditionalPropertiesArray {\n");
     sb.append("    ").append(toIndentedString(super.toString())).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("}");
+    sb.append("}");*/
+
+    //sb.append("class AdditionalPropertiesArray {\n");
+    /*sb.append("    ").*/sb.append(toIndentedString(super.toString()));//.append("\n");
+    /*sb.append("    name: ")*/sb.append("name=").append(toIndentedString(name));//.append("\n");
+    //sb.append("}");
     return sb.toString();
   }
 
@@ -103,7 +108,7 @@ public class AdditionalPropertiesArray extends HashMap<String, List> {
     if (o == null) {
       return "null";
     }
-    return o.toString().replace("\n", "\n    ");
+    return o.toString();//.replace("\n", "\n    ");
   }
 
 }
